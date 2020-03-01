@@ -15,6 +15,7 @@ func janken( you:Hand ) -> Optional<Int>{
     let num_random:Int = Int(arc4random_uniform(UInt32(3)))
     let hand:[String] = ["rock", "scissors", "paper"]
 //    print(num_random)
+    // pcHandもHand(enum)を使ってあげよう
     let pchand:String = hand[num_random]
     var result:String = "no much"
     switch you {
